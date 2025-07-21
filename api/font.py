@@ -23,8 +23,8 @@ class handler(BaseHTTPRequestHandler):
             return
 
         # --- 2. 載入字型檔並繪製點陣圖 ---
-        # 假設 font.ttf 與此 py 檔案在同一個 /api 資料夾中
-        font_path = os.path.join(os.path.dirname(__file__), 'font.ttf')
+        # 假設 font_data.ttf 與此 py 檔案在同一個 /api 資料夾中
+        font_path = os.path.join(os.path.dirname(__file__), 'font_data.ttf')
         try:
             font = ImageFont.truetype(font_path, 16)
         except IOError:
