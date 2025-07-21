@@ -27,7 +27,7 @@ def get_font_bitmap():
 
     # 將文字畫在畫布上
     # anchor='lt' 表示從左上角開始繪製
-    draw.text((0, -2), character, font=font, fill=1, anchor='lt')
+    draw.text((0, 0), character, font=font, fill=1)
 
     # --- 將圖片轉換為我們需要的「垂直」點陣資料 ---
     bitmap_columns = []
