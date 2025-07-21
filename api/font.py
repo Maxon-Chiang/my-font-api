@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # 載入位於專案根目錄的字型檔
 # os.path.realpath('') 會取得專案根目錄的路徑
-font_path = os.path.join(os.path.realpath(''), 'font.ttf')
+font_path = os.path.join(os.path.dirname(__file__), 'font.ttf')
 # 設定字型大小為 16px
 font = ImageFont.truetype(font_path, 16)
 
